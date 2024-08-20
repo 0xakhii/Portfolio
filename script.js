@@ -75,7 +75,7 @@ const select = document.querySelector("[data-select]"),
 //     elementToggleFunc(this)
 // });
 for (let i = 0; i < selectItems.length; i++) selectItems[i].addEventListener("click", function() {
-    let e = this.innerText.toLowerCase();
+    let e = this.innerText.toLowerCase();``
     selectValue.innerText = this.innerText, elementToggleFunc(select), filterFunc(e)
 });
 const filterItems = document.querySelectorAll("[data-filter-item]"),
