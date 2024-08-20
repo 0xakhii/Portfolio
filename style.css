@@ -1129,24 +1129,25 @@ textarea.form-input::-webkit-resizer {
 }
 #pdf {
     width: 75%;
-    height: 925px;
+    height: 850px;
     border: none;
 }
 
-/* @media (min-width: 360px) {
+@media (min-width: 360px) {
     #pdf{
-        width: 100%;
-        height: 100px;
+        display: none;
+        width: 75%;
+        height: 700px;
     }
-} */
+}
 
 @media (min-width: 450px) {
     .project-img {
         height: auto;
     }
     #pdf {
-        width: 100%;
-        height: 500px;
+        width: 75%;
+        height: 700px;
     }
     .testimonials-title {
         margin-bottom: 25px;
@@ -1225,10 +1226,6 @@ textarea.form-input::-webkit-resizer {
         --fs-6: 15px;
         --fs-7: 15px;
         --fs-8: 12px;
-    }
-    #pdf {
-        width: 100%;
-        height: 600px;
     }
     .sidebar,
     article {
@@ -1471,10 +1468,6 @@ textarea.form-input::-webkit-resizer {
     .project-list {
         grid-template-columns: 1fr 1fr;
     }
-    #pdf {
-        width: 90%;
-        height: 700px;
-    }
     .thm-tgl {
         top: var(--tp);
         right: var(--rg);
@@ -1556,10 +1549,6 @@ textarea.form-input::-webkit-resizer {
         top: var(--tp);
         right: var(--rg);
     }
-    #pdf {
-        width: 80%;
-        height: 800px;
-    }
     .sidebar,
     article {
         width: 950px;
@@ -1625,10 +1614,6 @@ textarea.form-input::-webkit-resizer {
         background: hsla(0, 0%, 100%, 0.1);
         border-radius: 20px;
         box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11), inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
-    }
-    #pdf {
-        width: 75%;
-        height: 925px;
     }
     body::-webkit-scrollbar-thumb:hover {
         background: hsla(0, 0%, 100%, 0.15);
