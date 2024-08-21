@@ -363,13 +363,81 @@ main p {
 .about-text p a{
     color: #6baee5;
 }
-#pdf {
+.pdf {
     width: 75%;
     height: 850px;
     border: none;
 }
+.project-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.project-card {
+    width: 250px;
+    transform: translateY(20px);
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    transition: transform 1s ease-in, box-shadow 1s ease-in;
+
+}
+.project-card p a{
+    color: #6baee5;
+}
+.project-card p {
+    display: none;
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+}
+
+.project-card:hover p {
+    display: inline-block;
+}
+
+.project-card:hover {
+    width: 75%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    animation: unhover-animation 1s ease-out;
+}
+
+@keyframes unhover-animation {
+    0% {
+        transform: translateY(-1px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+
+.project-card h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+
+.project-links a {
+    color: #3498db;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.project-links a:hover {
+    color: #1abc9c;
+    text-decoration: underline;
+}
+
 @media (min-width: 360px) {
-    #pdf{
+    .pdf{
         display: none;
         width: 75%;
         height: 700px;
@@ -379,7 +447,7 @@ main p {
     .project-img {
         height: auto;
    }
-    #pdf {
+    .pdf {
         width: 75%;
         height: 700px;
    }
