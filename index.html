@@ -3,25 +3,29 @@
 
 <head>
     <meta charset=UTF-8>
-    <meta name=viewport content="width=device-width,initial-scale=1">
-    <meta name=description content="Explore my portfolio, showcasing a variety of projects in software development, technology, and innovation.">
-    <meta name=keywords content="Omar Jamal, Portfolio, Technology, Innovation, Projects, Professional Journey, Software, Engineer, Developer, 0xakhi">
-    <meta name=author content="Omar Jamal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Omar Jamal's professional portfolio featuring projects in software development, C/C++ programming, technology innovation, and more. Showcasing expertise as a software engineer and developer.">
+    <meta name="keywords" content="Omar Jamal, Software Engineer, Portfolio, C Programming, C++ Programming, Software Development, Technology Projects, Professional Portfolio, Software Engineer Portfolio, Tech Innovation, Developer Portfolio, 1337 Coding School, Marrakech, 0xakhi">
+    <meta name="author" content="Omar Jamal">
+    <meta name="robots" content="index, follow">
+
     <title>Portfolio</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/logo.png"/>
-    <noscript>
-        <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css rel=preconnect>
-    </noscript>
     <script>
         ! function() {
             var e = document.createElement("link");
             e.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css", e.rel = "stylesheet", e.type = "text/css", document.getElementsByTagName("head")[0].appendChild(e)
         }()
-</script>
-    <link rel=stylesheet href=./style.css>
+        </script>
+       <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+       <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+       <link rel="stylesheet" href="./css/style.css">
+       <link rel="shortcut icon" type="image/x-icon" href="./assets/logo.png">
 </head>
 <body>
-    <div id=canvas-container> <canvas id=canvas1></canvas> </div>
+    <div id=canvas-container> <canvas id=background></canvas> </div>
     <main>
         <aside class=sidebar data-sidebar>
             <div class=sidebar-info>
@@ -73,7 +77,6 @@
                     <li class=navbar-item> <button class="navbar-link active" data-nav-link>About</button> </li>
                     <li class=navbar-item> <button class=navbar-link data-nav-link>Resume</button> </li>
                     <li class=navbar-item> <button class=navbar-link data-nav-link>Projects</button> </li>
-                    <!-- <li class=navbar-item> <button class=navbar-link data-nav-link>Contact</button> </li> -->
                 </ul>
             </nav>
             <article class="about active" data-page=about>
@@ -81,10 +84,10 @@
                     <h2 class="h2 article-title">About me</h2>
                 </header>
 				<section class="about-text">
-					<br>
-                    <p style="text-align:center"> Greetings, I'm <a>Omar</a>, a <a>pasionate</a> software engineer with a focus on C and C++. Currently, I'm a student at <a>1337 Coding School</a>, where I immerse myself in cutting-edge technologies and continuously push the boundaries of what I can achieve in the tech world. </p>
-                    <p style="text-align:center"> With a solid foundation in programming and a strong aptitude for solving complex problems, I thrive on challenges that require innovative solutions. My dedication to learning drives me to explore new technologies, develop efficient code, and contribute meaningfully to the tech community. Whether working on intricate projects or staying ahead of industry trends, I'm always eager to expand my skills and tackle new opportunities. </p>                    
-				</section>
+                    <br>
+                    <p style="text-align:center">Greetings, I'm <a href="#">Omar Jamal</a>, a <a href="#">passionate software engineer</a> specializing in C and C++ programming. Currently, I'm a dedicated student at <a href="#">1337 Coding School</a>, where I immerse myself in advanced technologies, continuously pushing the boundaries of software development and innovation.</p>
+                    <p style="text-align:center">With a solid foundation in programming and a strong aptitude for solving complex technical challenges, I excel in developing efficient, high-quality code. My commitment to learning and growth drives me to explore emerging technologies, contribute to the tech community, and tackle intricate projects with innovative solutions. Whether it's staying ahead of industry trends or taking on new opportunities, I'm always eager to expand my expertise and make a meaningful impact in the world of software engineering.</p>
+                </section>                
             </article>
             <article class=resume data-page=resume>
                 <header>
@@ -99,16 +102,10 @@
                 <header>
                     <h2 class="h2 article-title">Projects</h2>
                 </header>
-                <!-- <section class=projects>
-                </section> -->
             </article>
-            <!-- <article class=contact data-page=contact>
-                <header>
-                    <h2 class="h2 article-title">Contact</h2>
-                </header>
-            </article> -->
         </div>
     </main>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="./js/animation.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
