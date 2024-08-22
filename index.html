@@ -67,8 +67,8 @@
                 </ul>
                 <div class=separator></div>
                 <ul class=social-list>
-                    <li class=social-item> <a href=https://www.linkedin.com/in/ojamal-710- target=_blank class=social-link> <i id="linkdin" class="fa-brands fa-linkedin"></i> </a> </li>
-                    <li class=social-item> <a href=https://www.github.com/0xakhii target=_blank class=social-link> <i id="github" class="fa-brands fa-github"></i> </a> </li>
+                    <li class=social-item> <a href=https://www.linkedin.com/in/ojamal-710- target=_blank class=social-link> <i id="linkdin" class="fa-brands fa-linkedin fa-lg"></i> </a> </li>
+                    <li class=social-item> <a href=https://www.github.com/0xakhii target=_blank class=social-link> <i id="github" class="fa-brands fa-github fa-lg"></i> </a> </li>
                 </ul>
             </div>
         </aside>
@@ -78,6 +78,7 @@
                     <li class=navbar-item> <button class="navbar-link active" data-nav-link>About</button> </li>
                     <li class=navbar-item> <button class=navbar-link data-nav-link>Resume</button> </li>
                     <li class=navbar-item> <button class=navbar-link data-nav-link>Projects</button> </li>
+                    <li class=navbar-item> <button class=navbar-link data-nav-link>Contacts</button> </li>
                 </ul>
             </nav>
             <article class="about active" data-page=about>
@@ -184,9 +185,32 @@
                 </div>            
             </section>
             </article>
+            <article class=contacts data-page=contacts>
+                <header>
+                    <h2 class="h2 article-title">Contact Me</h2>
+                </header>
+                <section class="contact-form">
+                    <div class="contact-intro">
+                        <p>Have a question or interested in collaboration? I'd love to hear from you! Please use the form below to get in touch, and I'll respond as quickly as possible, typically within 24-48 hours.</p>
+                    </div>
+                    <form id="contactForm" action="https://formspree.io/f/xzzpjokk" method="POST" class="form-group">
+                        <label for="name">Name:</label>
+                        <input placeholder="Your name" type="text" id="name" name="name" required>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input placeholder="Your email address" type="email" id="email" name="email" required>
+                        <br>
+                        <label for="message">Message:</label>
+                        <textarea placeholder="Your message" id="message" name="message" required></textarea>
+                        <br>
+                        <button class="submit-btn" type="submit">Get in touch</button>
+                    </form>
+                    <p id="status"></p>
+                </section>    
         </div>
     </main>
     <script type="text/javascript" src="./js/animation.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/email.js"></script>
 </body>
 </html>

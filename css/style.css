@@ -373,11 +373,13 @@ main p {
     gap: 20px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
 }
 
 .project-card {
-    width: 250px;
+    flex: 1 1 calc(33.33% - 40px);
+    max-width: calc(33.33% - 40px);
     transform: translateY(20px);
     background-color: #1e1e1e;
     padding: 20px;
@@ -385,7 +387,6 @@ main p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     transition: transform 1s ease-in, box-shadow 1s ease-in;
-
 }
 .project-card p a{
     color: #6baee5;
@@ -402,12 +403,6 @@ main p {
     display: inline-block;
 }
 
-.project-card:hover {
-    width: 75%;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    animation: unhover-animation 1s ease-out;
-}
-
 @keyframes unhover-animation {
     0% {
         transform: translateY(-1px);
@@ -416,6 +411,13 @@ main p {
         transform: translateY(20px);
     }
 }
+
+.project-card:hover {
+    width: 75%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    animation: unhover-animation 1s ease-out;
+}
+
 
 
 .project-card h3 {
@@ -436,21 +438,100 @@ main p {
     text-decoration: underline;
 }
 
-@media (min-width: 360px) {
+.contact-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #c9c9c9;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #555;
+    outline: none;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+
+}
+
+.submit-btn:hover {
+    background-color: #4d5fff;
+    transform: translateY(-2px);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.contact-intro {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #e0e0e0;
+    max-width: 600px;
+    margin: 0 auto 2em;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#status {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+@media (min-width: 100px){
     .pdf{
         display: none;
         width: 75%;
         height: 700px;
    }
+   .project-card {
+        flex: 1 1 calc(100% - 10px);
+        max-width: calc(100% - 10px);
+    }
 }
 @media (min-width: 450px) {
-    .project-img {
-        height: auto;
-   }
     .pdf {
         width: 75%;
         height: 700px;
-   }
+    }
+    .project-card {
+        flex: 1 1 calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
 }
 @media (min-width: 580px) {
     :root {
@@ -535,6 +616,10 @@ main p {
     .about-text {
         margin-bottom: 40px;
    }
+   .project-card {
+        flex: 1 1 calc(100% - 40px);
+        max-width: calc(100% - 40px);
+    }
 }
 @media (min-width: 768px) {
     .contacts-list, .input-wrapper, .project-list {
@@ -555,6 +640,10 @@ main p {
     .article-title {
         padding-bottom: 20px;
    }
+   .project-card {
+        flex: 1 1 calc(100% - 40px);
+        max-width: calc(100% - 40px);
+    }
 }
 @media (min-width: 1024px) {
     :root {
@@ -563,7 +652,11 @@ main p {
         --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
         --tp: 35%;
         --rg: 5%;
-   }
+    }
+    .project-card {
+        flex: 1 1 calc(50% - 40px);
+        max-width: calc(50% - 40px);
+    }
     .sidebar, article {
         width: 950px;
         box-shadow: var(--shadow-5);
