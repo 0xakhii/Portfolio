@@ -1,9 +1,22 @@
+const themeToggle = document.querySelector('.theme-toggle button');
+const body = document.body;
+let color__ = "rgba(255,255,255,";
+let particleColor = "rgba(255,255,255,1)";
+themeToggle.addEventListener('click', () => {
+	body.classList.toggle('light-mode');
+	const isDarkMode = !body.classList.contains('light-mode');
+	themeToggle.innerHTML = isDarkMode ? '<i class="fas fa-sun fa-lg"></i>' : '<i class="fas fa-moon fa-lg"></i>';
+    color__ = isDarkMode ? "rgba(255,255,255," :  "rgba(0,0,0";
+    particleColor = isDarkMode ? "rgba(255,255,255,1)" : "rgba(0,0,0,1)";
+	init();
+	connect();
+});
+
 const canvas = document.getElementById("background");
 ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 let particlesArray;
-const color__ = "rgba(255,255,255,";
 class Particle {
     constructor(t, i, a, r, e, c) {
         this.x = t, this.y = i, this.directionX = a, this.directionY = r, this.size = e, this.color = c;
@@ -21,12 +34,12 @@ function init() {
     let t = canvas.height * canvas.width / 90000;
     for (let i = 0; i < t; i++) {
         let a = 3 * Math.random() + 1,
-            r = Math.random() * (innerWidth - 2 * a - 2 * a) + 2 * a,
-            e = Math.random() * (innerHeight - 2 * a - 2 * a) + 2 * a,
-            c = 2 * Math.random() - 1,
-            s = 2 * Math.random() - 1;
-        particlesArray.push(new Particle(r, e, c, s, a, "rgba(255,255,255,1)"));
-    }
+		r = Math.random() * (innerWidth - 2 * a - 2 * a) + 2 * a,
+		e = Math.random() * (innerHeight - 2 * a - 2 * a) + 2 * a,
+		c = 2 * Math.random() - 1,
+		s = 2 * Math.random() - 1;
+		particlesArray.push(new Particle(r, e, c, s, a, particleColor));
+	}
 }
 
 function connect() {

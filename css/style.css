@@ -36,7 +36,6 @@ a {
     cursor: pointer;
     padding: 10px;
     border-radius: 50%;
-	border: 1.5px solid var(--onyx);
     box-shadow: 0 2px 10px rgba(0,0,0,0.5);
     transition: all 0.3s ease;
 }
@@ -45,7 +44,7 @@ a {
     transform: scale(1.1);
 }
 :root {
-	--light-bg-color: hsl(0, 0%, 90%);
+	--light-bg-color: hsl(0, 0%, 90%, 0.2);
     --light-text-color: hsl(0, 0%, 10%);
     --light-onyx: hsl(240, 1%, 83%);
     --light-jet: hsl(0, 0%, 78%);
@@ -60,7 +59,7 @@ a {
     --jet: hsl(0, 0%, 22%, 0.5);
     --onyx: hsl(240, 1%, 17%);
     --eerie-black-1: hsl(240, 2%, 13%);
-    --eerie-black-2: hsl(240, 2%, 12%, 0.3);
+    --eerie-black-2: hsl(240, 2%, 12%, 0.2);
     --smoky-black: hsl(0, 3%, 13%);
     --white-1: hsl(0, 0%, 100%);
     --white-2: hsl(0, 0%, 98%);
@@ -123,7 +122,9 @@ button {
 :focus {
     outline-color: var(--corn-flower-blue);
 }
-
+#field{
+	font-size: medium;
+}
 body {
     --background-color: var(--smoky-black);
 	--text-color: #ffffff;
@@ -135,7 +136,10 @@ body {
     background: var(--onyx);
     color: var(--white-1);
 }
-
+.light-mode #field{
+	color: var(--light-text-color);
+	background-color: var(--light-bg-color);
+}
 .light-mode .theme-toggle button {
     background: var(--light-onyx);
     color: var(--light-text-color);
@@ -267,8 +271,7 @@ article {
 }
 
 .info_more-btn,
-.navbar,
-.testimonials-content-card {
+.navbar {
     box-shadow: var(--shadow-2);
 }
 
@@ -620,20 +623,10 @@ main p {
     display: inline-block;
 }
 
-@keyframes unhover-animation {
-    0% {
-        transform: translateY(-1px);
-    }
-
-    100% {
-        transform: translateY(20px);
-    }
-}
-
 .project-card:hover {
     width: 75%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    animation: unhover-animation 1s ease-out;
+	translate: translateY(-5px);
 }
 
 .project-card h3 {
