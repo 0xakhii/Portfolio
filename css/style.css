@@ -29,6 +29,7 @@ a {
 }
 
 .theme-toggle button {
+	width: 50px;
     background: none;
     border: none;
     color: #fff;
@@ -353,7 +354,6 @@ article.active {
     width: 7px;
     height: 7px;
 }
-
 .has-scrollbar::-webkit-scrollbar-track {
     background: var(--onyx);
     border-radius: 5px;
@@ -501,7 +501,6 @@ main p {
 #linkdin:hover {
     color: #0e76a8;
 }
-
 #github:hover {
     color: #6e5494;
 }
@@ -621,12 +620,13 @@ main p {
 
 .project-card:hover p {
     display: inline-block;
+	transition : 0.3s ease-in-out;
 }
 
 .project-card:hover {
     width: 75%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-	translate: translateY(-5px);
+	transition-delay: 0.2s;
 }
 
 .project-card h3 {
