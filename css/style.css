@@ -182,13 +182,6 @@ body.light-mode {
 .light-mode .project-card h3 {
 	color: var(--light-text-color);
 }
-.light-mode .has-scrollbar::-webkit-scrollbar-track {
-    background: var(--light-onyx);
-}
-
-.light-mode .has-scrollbar::-webkit-scrollbar-thumb {
-    background: var(--light-corn-flower-blue);
-}
 
 .light-mode .info-content .name {
     color: var(--light-text-color);
@@ -199,9 +192,15 @@ body.light-mode {
 }
 
 .light-mode .info_more-btn {
-    color: var(--light-corn-flower-blue);
+	background: var(--light-bg-color);
+	color: var(--light-text-color);
 }
-
+.light-mode .info_more-btn::before {
+	background: var(--light-bg-color);
+}
+.light-mode .info_more-btn:hover {	
+	background: var(--light-bg-color);
+}
 .light-mode .contact-info :is(.contact-link, time, address) {
     color: var(--light-text-color);
 }
@@ -210,9 +209,27 @@ body.light-mode {
 .light-mode .social-item {
     color: var(--light-text-color);
 }
+.light-mode::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
 
+.light-mode::-webkit-scrollbar-thumb {
+	background: var(--light-bg-color);
+    border-radius: 10px;
+}
+
+.light-mode::-webkit-scrollbar-track {
+	background: var(--light-bg-color);
+}
+
+.light-mode::-webkit-scrollbar-button {
+	background: var(--light-bg-color);
+}
 .light-mode .navbar {
     background: hsla(240, 1%, 83%, 0.75);
+}
+.light-mode .navbar-link:hover {
+	color: var(--light-corn-flower-blue);
 }
 .light-mode p {
 	color: var(--light-text-color);
@@ -227,7 +244,9 @@ body.light-mode {
     background-color: var(--light-eerie-black-1);
     color: var(--light-text-color);
 }
-
+.light-mode .social-item .social-link {
+	color: var(--light-text-color);
+}
 #canvas-container {
     position: fixed;
     top: 0;
@@ -348,24 +367,6 @@ article.active {
     height: 3px;
     background: var(--text-gradient-blue);
     border-radius: 3px;
-}
-
-.has-scrollbar::-webkit-scrollbar {
-    width: 7px;
-    height: 7px;
-}
-.has-scrollbar::-webkit-scrollbar-track {
-    background: var(--onyx);
-    border-radius: 5px;
-}
-
-.has-scrollbar::-webkit-scrollbar-thumb {
-    background: var(--corn-flower-blue);
-    border-radius: 5px;
-}
-
-.has-scrollbar::-webkit-scrollbar-button {
-    width: 20px;
 }
 
 main {
