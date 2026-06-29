@@ -2,7 +2,7 @@ import { HeadContent, Link, Outlet, Scripts, createFileRoute, createRootRouteWit
 import { jsx, jsxs } from "react/jsx-runtime";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 //#region src/styles.css?url
-var styles_default = "/assets/styles-B1fjBUQx.css";
+var styles_default = "/assets/styles-BFCfCSd0.css";
 //#endregion
 //#region src/routes/__root.tsx
 function NotFoundComponent() {
@@ -190,14 +190,14 @@ var Route$1 = createFileRoute("/sitemap.xml")({ server: { handlers: { GET: async
 } } } });
 //#endregion
 //#region src/routes/index.tsx
-var $$splitComponentImporter = () => import("./routes-gsUWvE0Q.js");
+var $$splitComponentImporter = () => import("./routes-ONQEovcN.js");
 var Route = createFileRoute("/")({
 	head: () => ({
 		meta: [
 			{ title: "Omar Jamal — Full-Stack Software Engineer" },
 			{
 				name: "description",
-				content: "Omar Jamal is a full-stack software engineer in Marrakech building real-time systems, cloud-native backends, and IoT platforms."
+				content: "Engineer working where systems, latency, and intention meet. Based in Marrakech."
 			},
 			{
 				property: "og:title",
@@ -205,7 +205,7 @@ var Route = createFileRoute("/")({
 			},
 			{
 				property: "og:description",
-				content: "Portfolio of Omar Jamal — IoT, cloud-native, and AI engineering. Python, FastAPI, C/C++, Kubernetes."
+				content: "Engineer working where systems, latency, and intention meet. Based in Marrakech."
 			},
 			{
 				property: "og:type",
@@ -241,7 +241,7 @@ var Route = createFileRoute("/")({
 			},
 			{
 				name: "twitter:description",
-				content: "Real-time systems, cloud-native backends, and IoT platforms. Based in Marrakech."
+				content: "Engineer working where systems, latency, and intention meet. Based in Marrakech."
 			},
 			{
 				name: "twitter:image",
