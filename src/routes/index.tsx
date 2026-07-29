@@ -5,13 +5,13 @@ import { ParticleField } from "@/components/ParticleField";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Omar Jamal — Full-Stack Software Engineer" },
+      { title: "Omar Jamal Full-Stack Software Engineer" },
       {
         name: "description",
         content:
           "Engineer working where systems, latency, and intention meet. Based in Marrakech.",
       },
-      { property: "og:title", content: "Omar Jamal — Full-Stack Software Engineer" },
+      { property: "og:title", content: "Omar Jamal Full-Stack Software Engineer" },
       {
         property: "og:description",
         content:
@@ -22,9 +22,9 @@ export const Route = createFileRoute("/")({
       { property: "og:image", content: "/og-image.jpg" },
       { property: "og:image:width", content: "1216" },
       { property: "og:image:height", content: "640" },
-      { property: "og:image:alt", content: "Omar Jamal — Full-Stack Software Engineer" },
+      { property: "og:image:alt", content: "Omar Jamal Full-Stack Software Engineer" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Omar Jamal — Full-Stack Software Engineer" },
+      { name: "twitter:title", content: "Omar Jamal Full-Stack Software Engineer" },
       {
         name: "twitter:description",
         content:
@@ -65,7 +65,7 @@ export const Route = createFileRoute("/")({
 });
 
 const stackGroups: { label: string; items: string[] }[] = [
-  { label: "Languages", items: ["Python", "C / C++", "TypeScript", "Bash"] },
+  { label: "Languages", items: ["Python", "C / C++", "TypeScript", "JavaScript", "Bash"] },
   { label: "Backend", items: ["FastAPI", "Django", "WebSockets", "LiveKit"] },
   { label: "Frontend", items: ["React", "React Native", "Tailwind"] },
   { label: "Infra", items: ["Docker", "Kubernetes", "GitHub Actions", "Linux"] },
@@ -79,7 +79,7 @@ const projects = [
     tag: "K8s · Microservices",
     name: "FT_SERVICES",
     blurb:
-      "A distributed system that doesn't flinch at scale. Automated rollouts, zero-downtime deployments, horizontal growth — stability as design, not luck.",
+      "A distributed system that doesn't flinch at scale. Automated rollouts, zero-downtime deployments, horizontal growth, stability as design, not luck.",
     href: "https://github.com/0xakhii",
   },
   {
@@ -108,7 +108,7 @@ const experience = [
     location: "Ben Guerir, MA",
     current: true,
     bullets: [
-      "Built an end-to-end IoT platform for qPCR machines — from edge agent to cloud backend — as the sole engineer.",
+      "Built an end-to-end IoT platform for qPCR machines from edge agent to cloud backend as the sole engineer.",
       "Designed a backend with twenty-plus endpoints, persisted state, and container orchestration that behaved predictably under load.",
       "Established CI pipelines that tested and deployed every service without shortcuts or late-night assumptions.",
     ],
@@ -120,9 +120,9 @@ const experience = [
     location: "Agadir, MA",
     current: false,
     bullets: [
-      "Designed a real-time voice pipeline for elderly users — speech to meaning to speech, across live connections.",
+      "Designed a real-time voice pipeline for elderly users speech to meaning to speech, across live connections.",
       "Created a decorator-based tool framework that let healthcare actions speak for themselves without wiring.",
-      "Threaded multilingual understanding through the interface — Darija and French, because context isn't optional for humans.",
+      "Threaded multilingual understanding through the interface Darija and French, because context isn't optional for humans.",
     ],
   },
 ];
@@ -162,7 +162,6 @@ function Portfolio() {
             OMAR<br />JAMAL
           </h1>
           <div className="mt-10 flex items-start gap-5">
-            <div className="mt-3 h-px w-14 shrink-0 bg-primary" />
             <p className="max-w-md text-base font-light leading-relaxed text-muted-foreground">
             Builder of systems that carry weight beyond the moment they were made. Quiet, precise, finished.
           </p>
@@ -183,7 +182,7 @@ function Portfolio() {
             / Philosophy
           </h2>
           <p className="mt-6 text-xl font-light leading-snug text-foreground/90 sm:text-2xl">
-            I shape what outlasts the shape. Not for keeping, not for showing — for the silence that comes after and finds nothing broken.
+            I shape what outlasts the shape. Not for keeping, not for showing. for the silence that comes after and finds nothing broken.
           </p>
         </section>
 
@@ -292,7 +291,7 @@ function Portfolio() {
             LET'S BUILD.
           </h2>
           <p className="mt-4 sm:mt-5 max-w-md text-sm font-light leading-relaxed text-muted-foreground">
-            If you need something built to last — a system, a pipeline, a product — write.
+            If you need something built to last. a system, a pipeline, a product. write.
           </p>
           <div className="mt-8 sm:mt-10 md:mt-12 flex flex-col">
             <ContactLine label="Email" value="ojamal710@gmail.com" href="mailto:ojamal710@gmail.com" primary />
@@ -305,7 +304,7 @@ function Portfolio() {
         {/* FOOTER */}
         <footer className="flex flex-col items-start justify-between gap-3 border-t border-border/40 pt-6 sm:flex-row sm:items-center">
           <p className="font-display text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
-            © 2027 Omar Jamal
+            © 2026 Omar Jamal
           </p>
           <p className="font-display text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
             GMT+1 · EN · AR · FR
