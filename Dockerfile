@@ -3,9 +3,9 @@ FROM node:22-alpine AS build
 
 WORKDIR /app
 
-# Install dependencies first (layer caching)
-COPY package.json package-lock.json ./
-RUN npm ci
+# Install dependencies (layer caching)
+COPY package.json package-lock.json* ./
+RUN npm install
 
 # Copy source and build the SPA
 COPY . .
