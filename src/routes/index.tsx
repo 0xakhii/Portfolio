@@ -39,7 +39,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
-          name: "Omar Jamal",
+          name: "Omar Jamal -- V2",
           jobTitle: "Full-Stack Software Engineer",
           address: {
             "@type": "PostalAddress",
