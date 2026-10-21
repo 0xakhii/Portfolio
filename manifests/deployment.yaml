@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: portfolio
-          image: 0xakhi/portfolio:v2
+          image: 0xakhi/portfolio:v1
           ports:
             - containerPort: 80
 ---
